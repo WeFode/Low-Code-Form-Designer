@@ -55,7 +55,6 @@ function Toolbar() {
     const temporalStore = useTemporalStore();
     const { undo, redo, pastStates, futureStates } = useStore(temporalStore);
 
-    const [showExportDialog, setShowExportDialog] = useState(false);
     const [showImportDialog, setShowImportDialog] = useState(false);
     const [importJSON, setImportJSON] = useState('');
     const [importError, setImportError] = useState('');
